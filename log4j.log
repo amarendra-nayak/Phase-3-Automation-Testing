@@ -1,0 +1,811 @@
+[main] INFO  APILogs  - ********* started the get call***********
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://reqres.in:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to reqres.in:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /api/users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 173[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: reqres.in[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: application/json, application/javascript, text/javascript, text/json
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 173
+[main] DEBUG org.apache.http.headers  - >> Host: reqres.in
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> " {[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "id": 100,[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "email": "abc@xyz.com",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "first_name": "Nik",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "last_name": "Shah",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "avatar": "https://reqres.in/img/faces/1-image.jpg"[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 201 Created[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Fri, 03 Dec 2021 07:15:07 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 160[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-powered-by: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "access-control-allow-origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "etag: W/"a0-eOUDJr38Xy5mVnakt34gThszK+w"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tv6hwReRX12FMUtKpu5z6nR%2BpAvFAj9zr%2BiUNIVZrpzGAGAmDdz1CJxvT8%2FgMu9FNzYlPKQFOxfSTd99e16UGBTwzkzfPskV01ioxGPaoDkJw5NX3vqm31jtEhc%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: cloudflare[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-RAY: 6b7b00850f2681b8-IAD[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << Date: Fri, 03 Dec 2021 07:15:07 GMT
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+[main] DEBUG org.apache.http.headers  - << Content-Length: 160
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << x-powered-by: Express
+[main] DEBUG org.apache.http.headers  - << access-control-allow-origin: *
+[main] DEBUG org.apache.http.headers  - << etag: W/"a0-eOUDJr38Xy5mVnakt34gThszK+w"
+[main] DEBUG org.apache.http.headers  - << via: 1.1 vegur
+[main] DEBUG org.apache.http.headers  - << CF-Cache-Status: DYNAMIC
+[main] DEBUG org.apache.http.headers  - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[main] DEBUG org.apache.http.headers  - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tv6hwReRX12FMUtKpu5z6nR%2BpAvFAj9zr%2BiUNIVZrpzGAGAmDdz1CJxvT8%2FgMu9FNzYlPKQFOxfSTd99e16UGBTwzkzfPskV01ioxGPaoDkJw5NX3vqm31jtEhc%3D"}],"group":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << Server: cloudflare
+[main] DEBUG org.apache.http.headers  - << CF-RAY: 6b7b00850f2681b8-IAD
+[main] DEBUG org.apache.http.headers  - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "{"id":100,"email":"abc@xyz.com","first_name":"Nik","last_name":"Shah","avatar":"https://reqres.in/img/faces/1-image.jpg","createdAt":"2021-12-03T07:15:07.836Z"}"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@89c10b7
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  APILogs  - ********* started the get call***********
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://reqres.in:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to reqres.in:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /api/users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 180[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: reqres.in[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: application/json, application/javascript, text/javascript, text/json
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 180
+[main] DEBUG org.apache.http.headers  - >> Host: reqres.in
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> " {[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "id": 100,[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "email": "abc@xyz.com",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "first_name": "Abhishek",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "last_name": "Gavali",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "avatar": "https://reqres.in/img/faces/1-image.jpg"[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 201 Created[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Fri, 03 Dec 2021 07:26:22 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 167[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-powered-by: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "access-control-allow-origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "etag: W/"a7-v71B+wgBwJ9mQQ/PPG/2cEqpUdM"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vEIVTbu2BrfPONM%2B%2FhPrILCgxF7D2kDqAnnAQfIDSNrSYL7db6ohnGRCNnVEzYL%2B4168xHPpY09pjTaMDbJzXsl0u6ASNp%2Bx0P6%2FZiaozrSg97%2F3dlanI2NzQd4%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: cloudflare[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-RAY: 6b7b10ff2c14749b-IAD[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << Date: Fri, 03 Dec 2021 07:26:22 GMT
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+[main] DEBUG org.apache.http.headers  - << Content-Length: 167
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << x-powered-by: Express
+[main] DEBUG org.apache.http.headers  - << access-control-allow-origin: *
+[main] DEBUG org.apache.http.headers  - << etag: W/"a7-v71B+wgBwJ9mQQ/PPG/2cEqpUdM"
+[main] DEBUG org.apache.http.headers  - << via: 1.1 vegur
+[main] DEBUG org.apache.http.headers  - << CF-Cache-Status: DYNAMIC
+[main] DEBUG org.apache.http.headers  - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[main] DEBUG org.apache.http.headers  - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vEIVTbu2BrfPONM%2B%2FhPrILCgxF7D2kDqAnnAQfIDSNrSYL7db6ohnGRCNnVEzYL%2B4168xHPpY09pjTaMDbJzXsl0u6ASNp%2Bx0P6%2FZiaozrSg97%2F3dlanI2NzQd4%3D"}],"group":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << Server: cloudflare
+[main] DEBUG org.apache.http.headers  - << CF-RAY: 6b7b10ff2c14749b-IAD
+[main] DEBUG org.apache.http.headers  - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "{"id":100,"email":"abc@xyz.com","first_name":"Abhishek","last_name":"Gavali","avatar":"https://reqres.in/img/faces/1-image.jpg","createdAt":"2021-12-03T07:26:22.764Z"}"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@89c10b7
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  APILogs  - ********* started the get call***********
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://reqres.in:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to reqres.in:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /api/users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 180[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: reqres.in[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: application/json, application/javascript, text/javascript, text/json
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 180
+[main] DEBUG org.apache.http.headers  - >> Host: reqres.in
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> " {[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "id": 100,[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "email": "abc@xyz.com",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "first_name": "Abhishek",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "last_name": "Gavali",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "avatar": "https://reqres.in/img/faces/1-image.jpg"[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 201 Created[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Fri, 03 Dec 2021 14:28:09 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 167[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-powered-by: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "access-control-allow-origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "etag: W/"a7-J4Y+kLbvI0SQag312Iwjqv7jsCg"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=zYopahfMysifVqCMD4ves7YpT%2Bq%2BV8DJhOtMbAFEQyNziJZU%2F2144zKx7%2FJ%2BM74EMiOPpauvHphNNroIMJzXZ6XJ0rxvAlk9IztAYq2iHORcKsYXmz29IixQiw8%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: cloudflare[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-RAY: 6b7d7ad7fd7d5a87-IAD[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << Date: Fri, 03 Dec 2021 14:28:09 GMT
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+[main] DEBUG org.apache.http.headers  - << Content-Length: 167
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << x-powered-by: Express
+[main] DEBUG org.apache.http.headers  - << access-control-allow-origin: *
+[main] DEBUG org.apache.http.headers  - << etag: W/"a7-J4Y+kLbvI0SQag312Iwjqv7jsCg"
+[main] DEBUG org.apache.http.headers  - << via: 1.1 vegur
+[main] DEBUG org.apache.http.headers  - << CF-Cache-Status: DYNAMIC
+[main] DEBUG org.apache.http.headers  - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[main] DEBUG org.apache.http.headers  - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=zYopahfMysifVqCMD4ves7YpT%2Bq%2BV8DJhOtMbAFEQyNziJZU%2F2144zKx7%2FJ%2BM74EMiOPpauvHphNNroIMJzXZ6XJ0rxvAlk9IztAYq2iHORcKsYXmz29IixQiw8%3D"}],"group":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << Server: cloudflare
+[main] DEBUG org.apache.http.headers  - << CF-RAY: 6b7d7ad7fd7d5a87-IAD
+[main] DEBUG org.apache.http.headers  - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "{"id":100,"email":"abc@xyz.com","first_name":"Abhishek","last_name":"Gavali","avatar":"https://reqres.in/img/faces/1-image.jpg","createdAt":"2021-12-03T14:28:09.755Z"}"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@89c10b7
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  APILogs  - ********* started the get call***********
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://reqres.in:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to reqres.in:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /api/users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "GET /api/users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: reqres.in[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> GET /api/users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Host: reqres.in
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Fri, 03 Dec 2021 14:28:32 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-powered-by: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "access-control-allow-origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: max-age=14400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-Cache-Status: HIT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Age: 1339[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SgZHri7aCKXjwBgcjE0b8lA282PBfIBSQX2PEXGVtSs6FBoVfBYWEwWA3pi%2F23ftQeXOf3uBEs8dLtNGu0oUUJXa9ORSGuCXyncMck7%2B%2BtdQW4NONZVOzGYYoC0%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: cloudflare[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-RAY: 6b7d7b69df8d594a-IAD[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Encoding: gzip[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << Date: Fri, 03 Dec 2021 14:28:32 GMT
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << x-powered-by: Express
+[main] DEBUG org.apache.http.headers  - << access-control-allow-origin: *
+[main] DEBUG org.apache.http.headers  - << etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"
+[main] DEBUG org.apache.http.headers  - << via: 1.1 vegur
+[main] DEBUG org.apache.http.headers  - << Cache-Control: max-age=14400
+[main] DEBUG org.apache.http.headers  - << CF-Cache-Status: HIT
+[main] DEBUG org.apache.http.headers  - << Age: 1339
+[main] DEBUG org.apache.http.headers  - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[main] DEBUG org.apache.http.headers  - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SgZHri7aCKXjwBgcjE0b8lA282PBfIBSQX2PEXGVtSs6FBoVfBYWEwWA3pi%2F23ftQeXOf3uBEs8dLtNGu0oUUJXa9ORSGuCXyncMck7%2B%2BtdQW4NONZVOzGYYoC0%3D"}],"group":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Server: cloudflare
+[main] DEBUG org.apache.http.headers  - << CF-RAY: 6b7d7b69df8d594a-IAD
+[main] DEBUG org.apache.http.headers  - << Content-Encoding: gzip
+[main] DEBUG org.apache.http.headers  - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+[main] DEBUG org.apache.http.wire  -  << "170[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd1]MK[0xc4]0[0x10][0x6][0xe0][0xbf][0x12][0xc7]kl[0xd9][0xf][0xf7][0x90][0x93]([0xa2][0x8]^[0x16][0xc1][0x83][0x88][0x8c][0xed]l[0x1b]m[0x9a]8[0x99][0xed]*[0xcb][0xfe]w[0xd9][0xae]X)][0xe9]-[0x1f][0xef][0x9b]y [[0x8]X[0x10][0x98][0x89][0x86]@[0xfc]r[0xd8],4[0x88][0x17][0xac][0xc0]L[0xa6]?[0xcb][0xf6]&[0x82][0x99]j[0xc8]Q[0x10][0xcc][0xd3][0x16]l[0xde][0xf6][0xc8][0xa1][0xad][0xc0]@A[0x9e][0xb]J^[0xab][0xb5][0x94][0x17]L[0x1f]L1[0xb1]5hXY[0x8e][0xf2]R[0xa3]#0p[0xd3][0xa6]@C[0x85][0xdd][0xe1][0xe5][0xbe][0x3][0x1a][0xb0]AA[0x6][0x3][0xa5]H[0x88]&M[0x9f]I[0xad]+[0xd2][0x15]f[0x14][0xd3][0xc9][0x99]uXP[0xf2][0x16][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[0xd8][0xe9][0x3]c[0xda]1[0xde][0xb0]&I6[0x84][\r][0xf1]q[0xc6][0xdd]>[0xd5]S<[0xb6][0x9d][0xb1][0x8c][0xe9][0x0]c[0xd6]1[0xc8]9L6[0xbe].[0x8e][0x1b][0xae][0x9d][0xc3]>[0xc1][0xd7][0xc5]X[0xc0]l[0x0]0[0xff][0x3]h()}%[0xff][0xcc]o[0xfa][0xff]p[0xeb]+[0x19];~>0[0xfe][0xbc][0x1b][0x9f][0x95][0xc8][0x15][0xc5][0xc4]yf[0x1b][0x8f]#[0xae][0xe][0xb9][0x1e][0xe4][0xbe]m[0x8d][0xa5][0x9c][0xf]P[0x16][0x1d]E[0x18]3[0xfa]J[0x18][0x9d][0xff][0x7][0xf2][0xd0][0xa6]z[0x8e][0xe5][0xbe]3[0x96][0xb1][0xf8][0xcb]x[0xd6][0x10][0xd7]!x[0x16]0[Xs5X>[0xfd][0xc9][0x9c][0x95][0x84][0xb9]m[0xff]^[0xe8]S[0xf6][0x1c][0xaf][0xde][0x89][0x82]Z[0xd2][0xc7][0x92][0xa2]Z1[0x91]V[0x99][0xaf][0x85][0xed][0xeb]Z[0xac][0xaf][0xa3][0x12][0xbf]A[0xce][0xa3][0x8a][0xc4][\r][0xb1][0xca]|[0x94][0xa8][0x90]Ia[0x8]L[0x99]E[0xa1][0xfc][0x4]v[0xbb]o[0xcc]?[0x16][0xce][0xe4][0x3][0x0][0x0]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1a1da881
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  APILogs  - ********* started the get call***********
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://reqres.in:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to reqres.in:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /api/users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "GET /api/users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: reqres.in[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> GET /api/users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Host: reqres.in
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Tue, 07 Dec 2021 10:17:13 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-powered-by: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "access-control-allow-origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: max-age=14400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-Cache-Status: HIT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Age: 3871[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Z3FuBUajOxqE0tu9%2FnfYPylY8DCQ4%2BYgW9sMdSlwnBsK8pcYAb%2BYQ%2B47rJxWfG0OePLOaS4QBvIl5dL%2BIdIHgRKYCm5wJNGhUGS4mHl745doCE6OU324WAzsVd4%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: cloudflare[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-RAY: 6b9d00c2bf3f580e-IAD[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Encoding: gzip[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << Date: Tue, 07 Dec 2021 10:17:13 GMT
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << x-powered-by: Express
+[main] DEBUG org.apache.http.headers  - << access-control-allow-origin: *
+[main] DEBUG org.apache.http.headers  - << etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"
+[main] DEBUG org.apache.http.headers  - << via: 1.1 vegur
+[main] DEBUG org.apache.http.headers  - << Cache-Control: max-age=14400
+[main] DEBUG org.apache.http.headers  - << CF-Cache-Status: HIT
+[main] DEBUG org.apache.http.headers  - << Age: 3871
+[main] DEBUG org.apache.http.headers  - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[main] DEBUG org.apache.http.headers  - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Z3FuBUajOxqE0tu9%2FnfYPylY8DCQ4%2BYgW9sMdSlwnBsK8pcYAb%2BYQ%2B47rJxWfG0OePLOaS4QBvIl5dL%2BIdIHgRKYCm5wJNGhUGS4mHl745doCE6OU324WAzsVd4%3D"}],"group":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Server: cloudflare
+[main] DEBUG org.apache.http.headers  - << CF-RAY: 6b9d00c2bf3f580e-IAD
+[main] DEBUG org.apache.http.headers  - << Content-Encoding: gzip
+[main] DEBUG org.apache.http.headers  - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+[main] DEBUG org.apache.http.wire  -  << "170[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd1]MK[0xc4]0[0x10][0x6][0xe0][0xbf][0x12][0xc7]kl[0xd9][0xf][0xf7][0x90][0x93]([0xa2][0x8]^[0x16][0xc1][0x83][0x88][0x8c][0xed]l[0x1b]m[0x9a]8[0x99][0xed]*[0xcb][0xfe]w[0xd9][0xae]X)][0xe9]-[0x1f][0xef][0x9b]y [[0x8]X[0x10][0x98][0x89][0x86]@[0xfc]r[0xd8],4[0x88][0x17][0xac][0xc0]L[0xa6]?[0xcb][0xf6]&[0x82][0x99]j[0xc8]Q[0x10][0xcc][0xd3][0x16]l[0xde][0xf6][0xc8][0xa1][0xad][0xc0]@A[0x9e][0xb]J^[0xab][0xb5][0x94][0x17]L[0x1f]L1[0xb1]5hXY[0x8e][0xf2]R[0xa3]#0p[0xd3][0xa6]@C[0x85][0xdd][0xe1][0xe5][0xbe][0x3][0x1a][0xb0]AA[0x6][0x3][0xa5]H[0x88]&M[0x9f]I[0xad]+[0xd2][0x15]f[0x14][0xd3][0xc9][0x99]uXP[0xf2][0x16][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[0xd8][0xe9][0x3]c[0xda]1[0xde][0xb0]&I6[0x84][\r][0xf1]q[0xc6][0xdd]>[0xd5]S<[0xb6][0x9d][0xb1][0x8c][0xe9][0x0]c[0xd6]1[0xc8]9L6[0xbe].[0x8e][0x1b][0xae][0x9d][0xc3]>[0xc1][0xd7][0xc5]X[0xc0]l[0x0]0[0xff][0x3]h()}%[0xff][0xcc]o[0xfa][0xff]p[0xeb]+[0x19];~>0[0xfe][0xbc][0x1b][0x9f][0x95][0xc8][0x15][0xc5][0xc4]yf[0x1b][0x8f]#[0xae][0xe][0xb9][0x1e][0xe4][0xbe]m[0x8d][0xa5][0x9c][0xf]P[0x16][0x1d]E[0x18]3[0xfa]J[0x18][0x9d][0xff][0x7][0xf2][0xd0][0xa6]z[0x8e][0xe5][0xbe]3[0x96][0xb1][0xf8][0xcb]x[0xd6][0x10][0xd7]!x[0x16]0[Xs5X>[0xfd][0xc9][0x9c][0x95][0x84][0xb9]m[0xff]^[0xe8]S[0xf6][0x1c][0xaf][0xde][0x89][0x82]Z[0xd2][0xc7][0x92][0xa2]Z1[0x91]V[0x99][0xaf][0x85][0xed][0xeb]Z[0xac][0xaf][0xa3][0x12][0xbf]A[0xce][0xa3][0x8a][0xc4][\r][0xb1][0xca]|[0x94][0xa8][0x90]Ia[0x8]L[0x99]E[0xa1][0xfc][0x4]v[0xbb]o[0xcc]?[0x16][0xce][0xe4][0x3][0x0][0x0]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1a1da881
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  APILogs  - ********* started the get call***********
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://reqres.in:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to reqres.in:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /api/users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 180[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: reqres.in[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: application/json, application/javascript, text/javascript, text/json
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 180
+[main] DEBUG org.apache.http.headers  - >> Host: reqres.in
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> " {[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "id": 100,[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "email": "abc@xyz.com",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "first_name": "Abhishek",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "last_name": "Gavali",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "avatar": "https://reqres.in/img/faces/1-image.jpg"[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 201 Created[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Tue, 07 Dec 2021 10:17:30 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 167[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-powered-by: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "access-control-allow-origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "etag: W/"a7-92GeK+agBoQb1ADOrWOVUijwCW4"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FICjqdPtkqMavCI2RLiDGAQtA2H9VfSlN2ZZrDpxEH3Z%2FRT3fse3uRegqFQnDmz7KPLsh5CGTtAse8LMbDOZPyiq0GDdL9%2BzLmTQCdRicKF4lS8kEP%2F7MJ70jEc%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: cloudflare[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-RAY: 6b9d012e69f681fa-IAD[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << Date: Tue, 07 Dec 2021 10:17:30 GMT
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+[main] DEBUG org.apache.http.headers  - << Content-Length: 167
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << x-powered-by: Express
+[main] DEBUG org.apache.http.headers  - << access-control-allow-origin: *
+[main] DEBUG org.apache.http.headers  - << etag: W/"a7-92GeK+agBoQb1ADOrWOVUijwCW4"
+[main] DEBUG org.apache.http.headers  - << via: 1.1 vegur
+[main] DEBUG org.apache.http.headers  - << CF-Cache-Status: DYNAMIC
+[main] DEBUG org.apache.http.headers  - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[main] DEBUG org.apache.http.headers  - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FICjqdPtkqMavCI2RLiDGAQtA2H9VfSlN2ZZrDpxEH3Z%2FRT3fse3uRegqFQnDmz7KPLsh5CGTtAse8LMbDOZPyiq0GDdL9%2BzLmTQCdRicKF4lS8kEP%2F7MJ70jEc%3D"}],"group":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << Server: cloudflare
+[main] DEBUG org.apache.http.headers  - << CF-RAY: 6b9d012e69f681fa-IAD
+[main] DEBUG org.apache.http.headers  - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "{"id":100,"email":"abc@xyz.com","first_name":"Abhishek","last_name":"Gavali","avatar":"https://reqres.in/img/faces/1-image.jpg","createdAt":"2021-12-07T10:17:30.793Z"}"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@89c10b7
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  APILogs  - ********* started the get call***********
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://reqres.in:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to reqres.in:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /api/users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "GET /api/users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: reqres.in[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> GET /api/users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Host: reqres.in
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Tue, 07 Dec 2021 10:18:29 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-powered-by: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "access-control-allow-origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: max-age=14400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-Cache-Status: HIT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Age: 3947[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4Sjj9lJAF%2BswZOw4XXx7twEAnIzpb%2BPlulcxsnOEzwE4Ski0A01CvoEdNU8hOWPNT6QpVwIPjLyNU9wOQYnWkfG8MHx7dZGGRZL0K8RWTjWqR8r1KSTbt7hg1aw%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: cloudflare[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-RAY: 6b9d029dfec437ee-IAD[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Encoding: gzip[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << Date: Tue, 07 Dec 2021 10:18:29 GMT
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << x-powered-by: Express
+[main] DEBUG org.apache.http.headers  - << access-control-allow-origin: *
+[main] DEBUG org.apache.http.headers  - << etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"
+[main] DEBUG org.apache.http.headers  - << via: 1.1 vegur
+[main] DEBUG org.apache.http.headers  - << Cache-Control: max-age=14400
+[main] DEBUG org.apache.http.headers  - << CF-Cache-Status: HIT
+[main] DEBUG org.apache.http.headers  - << Age: 3947
+[main] DEBUG org.apache.http.headers  - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[main] DEBUG org.apache.http.headers  - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4Sjj9lJAF%2BswZOw4XXx7twEAnIzpb%2BPlulcxsnOEzwE4Ski0A01CvoEdNU8hOWPNT6QpVwIPjLyNU9wOQYnWkfG8MHx7dZGGRZL0K8RWTjWqR8r1KSTbt7hg1aw%3D"}],"group":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Server: cloudflare
+[main] DEBUG org.apache.http.headers  - << CF-RAY: 6b9d029dfec437ee-IAD
+[main] DEBUG org.apache.http.headers  - << Content-Encoding: gzip
+[main] DEBUG org.apache.http.headers  - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+[main] DEBUG org.apache.http.wire  -  << "170[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd1]MK[0xc4]0[0x10][0x6][0xe0][0xbf][0x12][0xc7]kl[0xd9][0xf][0xf7][0x90][0x93]([0xa2][0x8]^[0x16][0xc1][0x83][0x88][0x8c][0xed]l[0x1b]m[0x9a]8[0x99][0xed]*[0xcb][0xfe]w[0xd9][0xae]X)][0xe9]-[0x1f][0xef][0x9b]y [[0x8]X[0x10][0x98][0x89][0x86]@[0xfc]r[0xd8],4[0x88][0x17][0xac][0xc0]L[0xa6]?[0xcb][0xf6]&[0x82][0x99]j[0xc8]Q[0x10][0xcc][0xd3][0x16]l[0xde][0xf6][0xc8][0xa1][0xad][0xc0]@A[0x9e][0xb]J^[0xab][0xb5][0x94][0x17]L[0x1f]L1[0xb1]5hXY[0x8e][0xf2]R[0xa3]#0p[0xd3][0xa6]@C[0x85][0xdd][0xe1][0xe5][0xbe][0x3][0x1a][0xb0]AA[0x6][0x3][0xa5]H[0x88]&M[0x9f]I[0xad]+[0xd2][0x15]f[0x14][0xd3][0xc9][0x99]uXP[0xf2][0x16][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[0xd8][0xe9][0x3]c[0xda]1[0xde][0xb0]&I6[0x84][\r][0xf1]q[0xc6][0xdd]>[0xd5]S<[0xb6][0x9d][0xb1][0x8c][0xe9][0x0]c[0xd6]1[0xc8]9L6[0xbe].[0x8e][0x1b][0xae][0x9d][0xc3]>[0xc1][0xd7][0xc5]X[0xc0]l[0x0]0[0xff][0x3]h()}%[0xff][0xcc]o[0xfa][0xff]p[0xeb]+[0x19];~>0[0xfe][0xbc][0x1b][0x9f][0x95][0xc8][0x15][0xc5][0xc4]yf[0x1b][0x8f]#[0xae][0xe][0xb9][0x1e][0xe4][0xbe]m[0x8d][0xa5][0x9c][0xf]P[0x16][0x1d]E[0x18]3[0xfa]J[0x18][0x9d][0xff][0x7][0xf2][0xd0][0xa6]z[0x8e][0xe5][0xbe]3[0x96][0xb1][0xf8][0xcb]x[0xd6][0x10][0xd7]!x[0x16]0[Xs5X>[0xfd][0xc9][0x9c][0x95][0x84][0xb9]m[0xff]^[0xe8]S[0xf6][0x1c][0xaf][0xde][0x89][0x82]Z[0xd2][0xc7][0x92][0xa2]Z1[0x91]V[0x99][0xaf][0x85][0xed][0xeb]Z[0xac][0xaf][0xa3][0x12][0xbf]A[0xce][0xa3][0x8a][0xc4][\r][0xb1][0xca]|[0x94][0xa8][0x90]Ia[0x8]L[0x99]E[0xa1][0xfc][0x4]v[0xbb]o[0xcc]?[0x16][0xce][0xe4][0x3][0x0][0x0]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1a1da881
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  APILogs  - ********* started the get call***********
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://reqres.in:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to reqres.in:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /api/users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 180[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: reqres.in[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: application/json, application/javascript, text/javascript, text/json
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 180
+[main] DEBUG org.apache.http.headers  - >> Host: reqres.in
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> " {[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "id": 100,[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "email": "abc@xyz.com",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "first_name": "Amarendra",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "last_name": "Nayak",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "avatar": "https://reqres.in/img/faces/1-image.jpg"[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 201 Created[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Tue, 07 Dec 2021 10:18:39 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 167[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-powered-by: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "access-control-allow-origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "etag: W/"a7-OthwCXu4En+8mrWkAvATSfEOLd8"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=40lbZ2ixuS0eVoc5%2BRz21qZ4cFjmDFZg2%2BUAQ3w0h1arXX6odv2ZQ6x0YX9uIoYEqt8bKrMTP04xF2Kgo6h9bsxr2JjkLYeqtCcSRwVOlxaCA2vZTuKwrgMBxco%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: cloudflare[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-RAY: 6b9d02dd3cd757b5-IAD[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << Date: Tue, 07 Dec 2021 10:18:39 GMT
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+[main] DEBUG org.apache.http.headers  - << Content-Length: 167
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << x-powered-by: Express
+[main] DEBUG org.apache.http.headers  - << access-control-allow-origin: *
+[main] DEBUG org.apache.http.headers  - << etag: W/"a7-OthwCXu4En+8mrWkAvATSfEOLd8"
+[main] DEBUG org.apache.http.headers  - << via: 1.1 vegur
+[main] DEBUG org.apache.http.headers  - << CF-Cache-Status: DYNAMIC
+[main] DEBUG org.apache.http.headers  - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[main] DEBUG org.apache.http.headers  - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=40lbZ2ixuS0eVoc5%2BRz21qZ4cFjmDFZg2%2BUAQ3w0h1arXX6odv2ZQ6x0YX9uIoYEqt8bKrMTP04xF2Kgo6h9bsxr2JjkLYeqtCcSRwVOlxaCA2vZTuKwrgMBxco%3D"}],"group":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << Server: cloudflare
+[main] DEBUG org.apache.http.headers  - << CF-RAY: 6b9d02dd3cd757b5-IAD
+[main] DEBUG org.apache.http.headers  - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "{"id":100,"email":"abc@xyz.com","first_name":"Amarendra","last_name":"Nayak","avatar":"https://reqres.in/img/faces/1-image.jpg","createdAt":"2021-12-07T10:18:39.715Z"}"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@89c10b7
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  APILogs  - ********* started the get call***********
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://reqres.in:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to reqres.in:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /api/users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 180[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: reqres.in[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: application/json, application/javascript, text/javascript, text/json
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 180
+[main] DEBUG org.apache.http.headers  - >> Host: reqres.in
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> " {[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "id": 100,[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "email": "abc@xyz.com",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "first_name": "Amarendra",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "last_name": "Nayak",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "avatar": "https://reqres.in/img/faces/1-image.jpg"[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 201 Created[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Tue, 07 Dec 2021 13:57:38 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 167[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-powered-by: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "access-control-allow-origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "etag: W/"a7-nn3e1KWESaEPdYu9kxc5K8vsKoQ"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9gLZ172BTylaI11fK6ijV9wsoiDTT8GvaelywflulXIbSaX8aQP7vCSgMGensMqwmmIXMOq1l5pBPZCHSOmrRIb1lM2dT4DZAcuy8jNrD%2FFWbg%2BqI6GgitoWjcw%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: cloudflare[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-RAY: 6b9e43a0fd4acf58-IAD[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << Date: Tue, 07 Dec 2021 13:57:38 GMT
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+[main] DEBUG org.apache.http.headers  - << Content-Length: 167
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << x-powered-by: Express
+[main] DEBUG org.apache.http.headers  - << access-control-allow-origin: *
+[main] DEBUG org.apache.http.headers  - << etag: W/"a7-nn3e1KWESaEPdYu9kxc5K8vsKoQ"
+[main] DEBUG org.apache.http.headers  - << via: 1.1 vegur
+[main] DEBUG org.apache.http.headers  - << CF-Cache-Status: DYNAMIC
+[main] DEBUG org.apache.http.headers  - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[main] DEBUG org.apache.http.headers  - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9gLZ172BTylaI11fK6ijV9wsoiDTT8GvaelywflulXIbSaX8aQP7vCSgMGensMqwmmIXMOq1l5pBPZCHSOmrRIb1lM2dT4DZAcuy8jNrD%2FFWbg%2BqI6GgitoWjcw%3D"}],"group":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << Server: cloudflare
+[main] DEBUG org.apache.http.headers  - << CF-RAY: 6b9e43a0fd4acf58-IAD
+[main] DEBUG org.apache.http.headers  - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "{"id":100,"email":"abc@xyz.com","first_name":"Amarendra","last_name":"Nayak","avatar":"https://reqres.in/img/faces/1-image.jpg","createdAt":"2021-12-07T13:57:38.226Z"}"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@89c10b7
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  APILogs  - ********* started the get call***********
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://reqres.in:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to reqres.in:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /api/users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "GET /api/users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: reqres.in[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> GET /api/users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Host: reqres.in
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Thu, 09 Dec 2021 12:50:33 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-powered-by: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "access-control-allow-origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: max-age=14400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-Cache-Status: HIT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Age: 5697[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HnvKgEi4dcivHODvM2Wds%2BU3LafyTMRLyHl8yPfdMObapdm4qcZctgilT1wuDYc%2BaMDMKBOeUTdSJZGwqJWc8X59MMIlDJTFI2oOjg6gw58kY%2BhtYkCmrqpWrOE%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: cloudflare[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-RAY: 6bae5c1dbcf682f8-IAD[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Encoding: gzip[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << Date: Thu, 09 Dec 2021 12:50:33 GMT
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << x-powered-by: Express
+[main] DEBUG org.apache.http.headers  - << access-control-allow-origin: *
+[main] DEBUG org.apache.http.headers  - << etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"
+[main] DEBUG org.apache.http.headers  - << via: 1.1 vegur
+[main] DEBUG org.apache.http.headers  - << Cache-Control: max-age=14400
+[main] DEBUG org.apache.http.headers  - << CF-Cache-Status: HIT
+[main] DEBUG org.apache.http.headers  - << Age: 5697
+[main] DEBUG org.apache.http.headers  - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[main] DEBUG org.apache.http.headers  - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HnvKgEi4dcivHODvM2Wds%2BU3LafyTMRLyHl8yPfdMObapdm4qcZctgilT1wuDYc%2BaMDMKBOeUTdSJZGwqJWc8X59MMIlDJTFI2oOjg6gw58kY%2BhtYkCmrqpWrOE%3D"}],"group":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Server: cloudflare
+[main] DEBUG org.apache.http.headers  - << CF-RAY: 6bae5c1dbcf682f8-IAD
+[main] DEBUG org.apache.http.headers  - << Content-Encoding: gzip
+[main] DEBUG org.apache.http.headers  - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+[main] DEBUG org.apache.http.wire  -  << "170[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0xd1]MK[0xc4]0[0x10][0x6][0xe0][0xbf][0x12][0xc7]kl[0xd9][0xf][0xf7][0x90][0x93]([0xa2][0x8]^[0x16][0xc1][0x83][0x88][0x8c][0xed]l[0x1b]m[0x9a]8[0x99][0xed]*[0xcb][0xfe]w[0xd9][0xae]X)][0xe9]-[0x1f][0xef][0x9b]y [[0x8]X[0x10][0x98][0x89][0x86]@[0xfc]r[0xd8],4[0x88][0x17][0xac][0xc0]L[0xa6]?[0xcb][0xf6]&[0x82][0x99]j[0xc8]Q[0x10][0xcc][0xd3][0x16]l[0xde][0xf6][0xc8][0xa1][0xad][0xc0]@A[0x9e][0xb]J^[0xab][0xb5][0x94][0x17]L[0x1f]L1[0xb1]5hXY[0x8e][0xf2]R[0xa3]#0p[0xd3][0xa6]@C[0x85][0xdd][0xe1][0xe5][0xbe][0x3][0x1a][0xb0]AA[0x6][0x3][0xa5]H[0x88]&M[0x9f]I[0xad]+[0xd2][0x15]f[0x14][0xd3][0xc9][0x99]uXP[0xf2][0x16][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[0xd8][0xe9][0x3]c[0xda]1[0xde][0xb0]&I6[0x84][\r][0xf1]q[0xc6][0xdd]>[0xd5]S<[0xb6][0x9d][0xb1][0x8c][0xe9][0x0]c[0xd6]1[0xc8]9L6[0xbe].[0x8e][0x1b][0xae][0x9d][0xc3]>[0xc1][0xd7][0xc5]X[0xc0]l[0x0]0[0xff][0x3]h()}%[0xff][0xcc]o[0xfa][0xff]p[0xeb]+[0x19];~>0[0xfe][0xbc][0x1b][0x9f][0x95][0xc8][0x15][0xc5][0xc4]yf[0x1b][0x8f]#[0xae][0xe][0xb9][0x1e][0xe4][0xbe]m[0x8d][0xa5][0x9c][0xf]P[0x16][0x1d]E[0x18]3[0xfa]J[0x18][0x9d][0xff][0x7][0xf2][0xd0][0xa6]z[0x8e][0xe5][0xbe]3[0x96][0xb1][0xf8][0xcb]x[0xd6][0x10][0xd7]!x[0x16]0[Xs5X>[0xfd][0xc9][0x9c][0x95][0x84][0xb9]m[0xff]^[0xe8]S[0xf6][0x1c][0xaf][0xde][0x89][0x82]Z[0xd2][0xc7][0x92][0xa2]Z1[0x91]V[0x99][0xaf][0x85][0xed][0xeb]Z[0xac][0xaf][0xa3][0x12][0xbf]A[0xce][0xa3][0x8a][0xc4][\r][0xb1][0xca]|[0x94][0xa8][0x90]Ia[0x8]L[0x99]E[0xa1][0xfc][0x4]v[0xbb]o[0xcc]?[0x16][0xce][0xe4][0x3][0x0][0x0]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@12f3afb5
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  APILogs  - ********* started the get call***********
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {s}->https://reqres.in:443
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to reqres.in:443
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /api/users HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 180[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: reqres.in[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /api/users HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: application/json, application/javascript, text/javascript, text/json
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 180
+[main] DEBUG org.apache.http.headers  - >> Host: reqres.in
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_265)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> " {[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "id": 100,[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "email": "abc@xyz.com",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "first_name": "Amarendra",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "last_name": "Nayak",[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "        "avatar": "https://reqres.in/img/faces/1-image.jpg"[\n]"
+[main] DEBUG org.apache.http.wire  -  >> "}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 201 Created[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Thu, 09 Dec 2021 12:50:33 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 167[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "x-powered-by: Express[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "access-control-allow-origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "etag: W/"a7-KwmkuWBgvNLjoCFzbjIjpFuyJJo"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "via: 1.1 vegur[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gh6RnpAm4BqAq%2F2K2VkJjApndEtIcxHpPs7SEfQJpp4wvrg5V6%2FTIKxmEc2u8l4fXe8maxShF7WzqYpShygKugZ%2FMAbp62mipRgI075GncyEXBmN2FNIK%2FcPA8U%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: cloudflare[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "CF-RAY: 6bae5c1edacc5b64-IAD[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 201 Created
+[main] DEBUG org.apache.http.headers  - << Date: Thu, 09 Dec 2021 12:50:33 GMT
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json; charset=utf-8
+[main] DEBUG org.apache.http.headers  - << Content-Length: 167
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.headers  - << x-powered-by: Express
+[main] DEBUG org.apache.http.headers  - << access-control-allow-origin: *
+[main] DEBUG org.apache.http.headers  - << etag: W/"a7-KwmkuWBgvNLjoCFzbjIjpFuyJJo"
+[main] DEBUG org.apache.http.headers  - << via: 1.1 vegur
+[main] DEBUG org.apache.http.headers  - << CF-Cache-Status: DYNAMIC
+[main] DEBUG org.apache.http.headers  - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+[main] DEBUG org.apache.http.headers  - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gh6RnpAm4BqAq%2F2K2VkJjApndEtIcxHpPs7SEfQJpp4wvrg5V6%2FTIKxmEc2u8l4fXe8maxShF7WzqYpShygKugZ%2FMAbp62mipRgI075GncyEXBmN2FNIK%2FcPA8U%3D"}],"group":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[main] DEBUG org.apache.http.headers  - << Server: cloudflare
+[main] DEBUG org.apache.http.headers  - << CF-RAY: 6bae5c1edacc5b64-IAD
+[main] DEBUG org.apache.http.headers  - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json; charset=utf-8
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "{"id":100,"email":"abc@xyz.com","first_name":"Amarendra","last_name":"Nayak","avatar":"https://reqres.in/img/faces/1-image.jpg","createdAt":"2021-12-09T12:50:33.559Z"}"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3d9fc57a
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
